@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <right>
+            <AnchorPane prefHeight="442.0" prefWidth="290.0" BorderPane.alignment="CENTER">
+               <children>
+                 <TextField fx:id="username" layoutX="21.0" layoutY="124.0" prefHeight="28.0" prefWidth="247.0" promptText="Username" style="-fx-background-color: #F5F5F5; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+<TextField fx:id="email" layoutX="21.0" layoutY="186.0" prefHeight="28.0" prefWidth="247.0" promptText="Email" style="-fx-background-color: #F5F5F5; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+<PasswordField fx:id="password" layoutX="20.0" layoutY="248.0" prefHeight="28.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                 
+<Button fx:id="loginButton" layoutX="106.0" layoutY="312.0" mnemonicParsing="false" onAction="#register" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #DC143C;">
+
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+                  <Text fill="#db002c" layoutX="96.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in" wrappingWidth="137.24869537353516">
+                     <font>
+                        <Font name="Wingdings 3" size="27.0" />
+                     </font>
+                  </Text>
+           
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+      <ImageView fitHeight="428.0" fitWidth="314.0">
+         <image>
+            <Image url="@0f4233339a372ea0cbca66af045cbb7c.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="366.0" fitWidth="297.0" layoutX="20.0" layoutY="28.0">
+         <image>
+            <Image url="@../../../../../Downloads/agence.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
